@@ -1,0 +1,41 @@
+# Origin + CLAHE +  Augmentation
+# train: BUSI-augmented/images/train
+# val: BUSI-augmented/images/val
+
+# Origin
+# train: BUSI-YOLOv8/images/train
+# val: BUSI-YOLOv8/images/val
+
+# Origin + CLAHE
+# train: BUSI-clahe/images/train
+# val: BUSI-clahe/images/val
+
+# Origin + Augmentation
+# train: BUSI-aug-only/images/train
+# val: BUSI-aug-only/images/val
+
+# ---------------With Normal---------------
+# Origin + CLAHE +  Augmentation
+# train: BUSI-augmented2/images/train
+# val: BUSI-augmented2/images/val
+
+# Origin
+# train: BUSI-YOLOv8/images/train
+# val: BUSI-YOLOv8/images/val
+
+# Origin + CLAHE
+# train: BUSI-clahe2/images/train
+# val: BUSI-clahe2/images/val
+
+# Origin + Augmentation
+# train: BUSI-aug-only2/images/train
+# val: BUSI-aug-only2/images/val
+
+
+# --------------------Fine-tune-----------------
+train: BUSI-fewshot2/images/train
+val: BUSI-fewshot2/images/val
+
+
+nc: 1
+names: ['tumor']
