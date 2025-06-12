@@ -1,6 +1,6 @@
 # MedAI_final_project
 
-# YOLO Training
+## YOLO Training
 * Dataset Format
 ```
 BUSI-YOLOv8/
