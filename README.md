@@ -1,5 +1,48 @@
 # MedAI_final_project
 
+## Correcting Box
+The file is for the doctor to correct the incorrect boxes.
+This was aimed to have a yolo model to have a better and closer predictions. However, when we later fintuned the model using the corrected data, we got a lower accuracy, therefore we did not write this part on the report.
+
+## Mask to Box
+### qambi-to-box.py
+Run to create Yolo Box from the qamebi masks! :D
+* Dataset Format
+```
+qamebi/
+├── Benign/
+│   ├── 1 Benign Image.bmp
+│   ├── 1 Benign Mask.tif
+│   ├── 2 Benign Image.bmp
+│   ├── 2 Benign Mask.tif
+│   └── ...
+├── Malignant/
+│   ├── 1 Malignant Image.bmp
+│   ├── 1 Malignant Mask.tif
+│   ├── 2 Malignant Image.bmp
+│   ├── 2 Malignant Mask.tif
+│   └── ...
+```
+
+### uclm-to-box.py
+Run to create Yolo Box from the BUS-UCLM masks! :D
+* Dataset Format
+```
+BUS-UCLM/
+├── images/
+│   ├── ALWI_000.png
+│   ├── ALWI_001.png
+│   └── ...
+├── masks/
+│   ├── ALWI_000.png
+│   ├── ALWI_001.png
+│   └── ...
+├── INFO.csv
+```
+
+### show.py
+A simple python script for you to make sure if you have the correct box.
+
 ## YOLO Training
 * Dataset Format
 ```
